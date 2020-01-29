@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\noindent
+To compile programs in C, first create the file with "file\_name.c" and in the same work space location, open up the terinal and type
+\begin{verbatim}
+gcc -o executable_name file_name.c -lwiringPi
+\end{verbatim}
+where "executable\_name" is the name of the executable that is to be created from the C program. this is usually the same as the file name. an example would be that for "blink.c", the executable could also be called "blink" and the corresponding compilation command would be
+\begin{verbatim}
+gcc -o blink blink.c -lwiringPi
+\end{verbatim}
+Note that "-lwiringPi" is to account for the inclusion of the third party library "wiringPi.h".\\\\ To execute the file use
+\begin{verbatim}
+./executable_name
+\end{verbatim}
+or
+\begin{verbatim}
+sudo ./executable_name
+\end{verbatim}
+
+\end{document}
